@@ -1,0 +1,220 @@
+ body{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg,#4ca9df,#324151,#9599a2,#112d60,#292e91);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     font-family:fantasy;
+ }
+.box{
+    font-weight:normal;
+    color: black;
+     position: absolute;
+     width: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: transparent;
+ }
+.box:before{
+     content: '';
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     right: -2px;
+     bottom: -2px;
+     background: #fff;
+     z-index: -1;
+ }
+.box:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box:before,
+.box:after{
+    background: linear-gradient(235deg,#112d60,#b6c0c5,#112d60);
+}
+.content{
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+ *{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+@keyframes change{
+    0%{
+    background-position: 0 50%;
+}
+    50%{
+    background-position: 100% 50%;
+}
+    100%{
+    background-position: 0 50%;
+}
+} 
+::-webkit-scrollbar
+{
+    width: 0;
+}
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100px;
+    background: rgb(225,225,225,0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top,#112d60,#b6c0c5);
+}
+
+h1{
+    font-size: 60px;
+}
+pre{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    margin: 0;
+    right: 1274px;
+    top: 400px;
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 30px;
+    background-color: black;
+    padding: 10px;
+    letter-spacing: 10px;
+}
+a > img{
+    position: absolute;
+    width: 50px;
+    margin: 0;
+    left: 0;
+    top: 300px;
+}
+section{
+    background-color: black;
+}
+section div{
+    top: 1300px;
+    position: absolute;
+    display: inline;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    background: black;
+    text-align: center;
+}
+section .box1{
+    font-size: 30px;
+    top: 1400px;
+    left: 150px;
+}
+section .box2{
+    font-size: 30px;
+    top: 1400px;
+    left: 550px;
+}
+section .box3{
+    font-size: 30px;
+    top: 1400px;
+    left: 950px;
+}
+section a{
+    top: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #112d60;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow:hidden;
+    transition: 0.2s;
+}
+section a:hover{
+    color: white;
+    background: #112d60;
+    box-shadow: 0 0 10px #112d60, 0 0 40px #112d60, 0 0 80px #112d60 ;
+}
+p{
+    font-size: 16px;
+    position: relative;
+    top: 130px;
+}
+footer{
+    position: relative;
+    top: 1400px;
+}
+.projecttittle{
+    padding-inline-end: 550px;
+    padding-inline-start: 550px;
+    background-color: black;
+    font-size: 50px;
+    display: block;
+    top: 900px;
+    position: relative;
+}
+footer {
+    color: black;
+    position: absolute;
+    top: 1950px;
+}
+.s1{
+    letter-spacing: 10px;
+    position: absolute;
+    top: 800px;
+    left: 615px;
+    font-size: 50px;
+}
+.s2{
+    letter-spacing: 10px;
+    position: absolute;
+    top: 875px;
+    left: 625px;
+    font-size: 50px;
+}
+.s3{
+    letter-spacing: 10px;
+    position: absolute;
+    top: 950px;
+    left: 540px;
+    font-size: 50px;
+}
+.s4{
+    letter-spacing: 10px;
+    position: absolute;
+    top: 1025px;
+    left: 610px;
+    font-size: 50px;
+}
+
+
+
